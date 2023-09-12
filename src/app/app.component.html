@@ -1,0 +1,22 @@
+<h1>Hello from {{name}}!</h1>
+
+<h3>Debounce input </h3>
+<small>Search after some delay. e.g after 2s <br></small>
+<input  appSearchWithDebounceTime [debounceTime]="2000" (search)="search($event)"/>
+<p>{{searchText}}</p>
+<hr>
+
+
+<h3>Only Letter</h3>
+<small>You can input only alphabet letters <br></small>
+<input type="text" onlyLetter />
+<hr>
+
+<h3>Currency<h3>
+{{ 1234444456 | myCurrency: 'UZS' }}
+<hr>
+
+<h3>SVGs</h3>
+<app-star></app-star>
+<app-star [color]="'red'"></app-star>
+<app-star [color]="'blue'" [width]="32" [height]="32"></app-star>
